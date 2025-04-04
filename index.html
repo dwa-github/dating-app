@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>CSS Advanced Project</title>
+  </head>
+  <body>
+    <!-- Header, Nav and Hero Section -->
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="#" class="nav-logo-link"
+            ><img
+              src="img/logo-icon.svg"
+              alt="Dating App Logo"
+              width="48"
+              height="32"
+            />Dating App</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <button class="nav-toggle" id="nav-toggle">
+            <img src="img/menu-btn.svg" alt="" />
+          </button>
+          <ul class="nav-list-link" id="nav-list-link">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Profile</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-btn-container">
+              <button id="login-btn">Login</button>
+              <button id="signup-btn">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <div class="hero-img-container"></div>
+        <div class="hero-content-container">
+          <div class="hero-description">
+            <h1>The Dating App You've Been Waiting For</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              cupiditate quaerat eos, tempora iusto ducimus vel molestiae
+              veritatis dolorem quod.
+            </p>
+            <button>Start Dating Today</button>
+          </div>
+          <div class="hero-supporting-content">
+            <p>Download the app on your smartphone</p>
+            <ul class="hero-apps-list">
+              <li>
+                <a
+                  href="itms-apps://?action=discover&referrer=app-store&itscg=10000&itsct=app-appstore-nav-200917"
+                  target="_blank"
+                  id="apple-app-store"
+                  ><img
+                    src="img/apple-app-store.svg"
+                    alt="Download on the Apple App Store"
+                    width="120"
+                    height="40"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps"
+                  target="_blank"
+                  id="android-app-store"
+                  ><img
+                    src="img/android-app-store.png"
+                    alt="Download on the Android App Store"
+                    width="120"
+                    height="36"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- About us section: main -->
+      <section>
+        <div class="conatiner about-us-container">
+          <div class="about-img-container" id="about-img-main">
+            <img
+              src="img/about-us-xs.jpg"
+              alt="About Us Image"
+              width="480"
+              height="320"
+            />
+          </div>
+          <div class="about-us-content" id="about-content-main">
+            <span class="section-tag">About Us</span>
+            <h2>Connecting Hearts, Building Relationships</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              vel accusamus quod est ea dolore autem neque nam molestias porro
+              doloribus soluta, cupiditate reiciendis.
+            </p>
+            <button>Find Your Match</button>
+          </div>
+        </div>
+      </section>
+      <!-- About us section: Matching -->
+      <section>
+        <div class="conatiner about-us-container">
+          <div class="about-img-container">
+            <img
+              src="img/about-us-matching-xs.jpg"
+              alt="About Us Image"
+              width="480"
+              height="320"
+            />
+          </div>
+          <div class="about-us-content">
+            <h2>Advanced Matching Algorithm</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              vel accusamus quod est ea dolore autem neque nam molestias porro
+              doloribus soluta, cupiditate reiciendis.
+            </p>
+            <button>Find Your Match</button>
+          </div>
+        </div>
+      </section>
+      <!-- About us section: profile  -->
+      <section>
+        <div class="conatiner about-us-container">
+          <div class="about-img-container" id="about-im-profile">
+            <img
+              src="img/about-us-profile-xs.jpg"
+              alt="About Us Image"
+              width="480"
+              height="320"
+            />
+          </div>
+          <div class="about-us-content" id="about-content-profile">
+            <h2>Rich Profile Customization</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              vel accusamus quod est ea dolore autem neque nam molestias porro
+              doloribus soluta, cupiditate reiciendis.
+            </p>
+            <button>Find Your Match</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About us section: Chat -->
+      <section>
+        <div class="conatiner about-us-container">
+          <div class="about-img-container">
+            <img
+              src="img/about-us-chat-xs.jpg"
+              alt="About Us Image"
+              width="480"
+              height="320"
+            />
+          </div>
+          <div class="about-us-content">
+            <h2>Real-Time Chat and Messaging</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              vel accusamus quod est ea dolore autem neque nam molestias porro
+              doloribus soluta, cupiditate reiciendis.
+            </p>
+            <button>Find Your Match</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works section -->
+      <section class="how-works-section">
+        <div class="conatiner how-works-container">
+          <div class="how-works-header">
+            <span class="section-tag">How it works </span>
+            <h2>Unveiling the Path to Meaningful Connections</h2>
+          </div>
+          <div class="how-works-cards-container">
+            <article class="how-works-card">
+              <div class="article-icon-container">
+                <img
+                  src="img/profile-sign-up-icon.svg"
+                  alt="Profile Signup Icon"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <h3>Sign Up</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores rem qui odit provident consectetur earum a laudantium
+                ipsam voluptate sequi?
+              </p>
+            </article>
+            <article class="how-works-card">
+              <div class="article-icon-container">
+                <img
+                  src="img/create-profile-icon.svg"
+                  alt="Profile Signup Icon"
+                  width="48"
+                  height="48"
+                />
+              </div>
+
+              <h3>Create a Profile</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores rem qui odit provident consectetur earum a laudantium
+                ipsam voluptate sequi?
+              </p>
+            </article>
+            <article class="how-works-card">
+              <div class="article-icon-container">
+                <img
+                  src="img/profile-search-icon.svg"
+                  alt="Profile Signup Icon"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <h3>Brows and Match</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores rem qui odit provident consectetur earum a laudantium
+                ipsam voluptate sequi?
+              </p>
+            </article>
+            <article class="how-works-card">
+              <div class="article-icon-container">
+                <img
+                  src="img/profile-conversations-icon.svg"
+                  alt="Profile Signup Icon"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <h3>Initiate Conversations</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores rem qui odit provident consectetur earum a laudantium
+                ipsam voluptate sequi?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq-section">
+        <div class="container faq-container">
+          <div class="faq-header">
+            <span class="section-tag">FAQ</span>
+            <h2>Clearing Your Doubts</h2>
+          </div>
+          <ul class="faq-list">
+            <li>
+              <h3>How does the matching algorithm works</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci animi totam accusantium esse nam earum aspernatur!
+                Ipsum, dolore asperiores.
+              </p>
+            </li>
+            <li>
+              <h3>Is my personal information kept private?</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                adipisci animi totam accusantium esse nam earum aspernatur!
+                Ipsum, dolore asperiores.
+              </p>
+            </li>
+            <li>
+              <h3>Can I use the app without paying?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis ducimus consequatur pariatur aliquam quos maiores,
+                culpa corrupti hic et velit.
+              </p>
+            </li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <!-- Pricing and Subscrription Section -->
+      <section class="pricing-section">
+        <div class="pricing-header">
+          <span class="section-tag">Pricing and Subscrription</span>
+          <h2>Upgrade to Unlock Premium</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit unde
+            aperiam, illo ullam error ipsam.
+          </p>
+          <div class="pricing-type-list">
+            <button id="monthly-payment">Monthly</button>
+            <button id="yearly-payment">Yearly</button>
+          </div>
+        </div>
+        <div class="pricing-container">
+          <article class="pricing-card">
+            <h3>Basic</h3>
+            <ul class="pricing-list">
+              <li><p>Limited access to features</p></li>
+              <li><p>Ad-supported experience</p></li>
+              <li><p>Basic matching algorithm</p></li>
+            </ul>
+            <div class="pricing-plan-container">
+              <h4>Free</h4>
+              <button>Try 1 Month</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Standard</h3>
+            <ul class="pricing-list">
+              <li><p>Unlimited swipes and interactions</p></li>
+              <li><p>Ad-free experience</p></li>
+              <li><p>Enhanced visibility in search results</p></li>
+              <li><p>Ad-free browsing experience</p></li>
+              <li><p>Advanced matching algorithm</p></li>
+            </ul>
+            <div class="pricing-plan-container">
+              <h4>€9.99</h4>
+              <button>Try 1 Month</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <span id="popular-pack-title">Popular Pack</span>
+            <h3>VIP</h3>
+            <ul class="pricing-list">
+              <li><p>All Standard plan features</p></li>
+              <li><p>VIP badge on profile for increased visibility</p></li>
+              <li><p>Boosted visibility and priority matching</p></li>
+              <li><p>Special perks and privilieges</p></li>
+              <li><p>VIP Customer Support</p></li>
+            </ul>
+            <div class="pricing-plan-container">
+              <h4>€19.99</h4>
+              <button>Try 1 Month</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section>
+        <div class="testimonials-section-container">
+          <div class="testimonials-header">
+            <span class="section-tag">Testimonials</span>
+            <h2>"What Our Users Are Saying"</h2>
+          </div>
+          <div class="testimonials-container">
+            <div class="testimonials-card">
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                dolorem placeat non fugiat consectetur officia ratione culpa
+                ipsum natus."
+              </p>
+              <div class="testimonials-card-profile">
+                <img
+                  src="img/testimonials-img-1.jpg"
+                  alt="Testimonials img 1"
+                  width="120"
+                  height="120"
+                />
+                <ul class="testimonials-card-list">
+                  <li><h5 class="profile-name">Natasha</h5></li>
+                  <li><span class="profile-location">Earth</span></li>
+                  <li>
+                    <span class="profile-score">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                dolorem placeat non fugiat consectetur officia ratione culpa
+                ipsum natus."
+              </p>
+              <div class="testimonials-card-profile">
+                <img
+                  src="img/testimonials-img-2.jpg"
+                  alt="Testimonials img 2"
+                  width="120"
+                  height="120"
+                />
+                <ul class="testimonials-card-list">
+                  <li><h5 class="profile-name">Thor</h5></li>
+                  <li><span class="profile-location">Asgard</span></li>
+                  <li>
+                    <span class="profile-score">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                dolorem placeat non fugiat consectetur officia ratione culpa
+                ipsum natus."
+              </p>
+              <div class="testimonials-card-profile">
+                <img
+                  src="img/testimonials-img-3.jpg"
+                  alt="Testimonials img 3"
+                  width="120"
+                  height="120"
+                />
+                <ul class="testimonials-card-list">
+                  <li><h5 class="profile-name">Maria</h5></li>
+                  <li><span class="profile-location">Ria</span></li>
+                  <li>
+                    <span class="profile-score">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                dolorem placeat non fugiat consectetur officia ratione culpa
+                ipsum natus."
+              </p>
+              <div class="testimonials-card-profile">
+                <img
+                  src="img/testimonials-img-4.jpg"
+                  alt="Testimonials img 4"
+                  width="120"
+                  height="120"
+                />
+                <ul class="testimonials-card-list">
+                  <li><h5 class="profile-name">Pepper</h5></li>
+                  <li><span class="profile-location">Titan</span></li>
+                  <li>
+                    <span class="profile-score">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button id="testimonials-btn">See More</button>
+        </div>
+      </section>
+
+      <!-- Banner Section -->
+      <section class="banner-section">
+        <div class="container banner-container">
+          <h2>Find Your Perfect Match Today!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde id
+            numquam, impedit harum.
+          </p>
+          <ul class="banner-app-list">
+            <li>
+              <a
+                href="itms-apps://?action=discover&referrer=app-store&itscg=10000&itsct=app-appstore-nav-200917"
+                target="_blank"
+                class="app-store-link"
+                ><img src="img/apple-app-store.svg" alt="Apple App Store Badge"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                class="app-store-link"
+                ><img
+                  src="img/android-app-store.png"
+                  alt="Android App Store Badge"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <a href="/" id="footer-logo-link"
+          ><img
+            src="img/logo-icon.svg"
+            alt="Dating App Logo"
+            width="48"
+            height="32"
+          />Dating App</a
+        >
+
+        <ul class="footer-nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Profile</a></li>
+          <li><a href="/">FAQ</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+        <ul class="footer-social-icons">
+          <li>
+            <a href="https://x.com" target="_blank" id="x-link"
+              ><img src="img/x-icon.svg" alt="X Icon" width="48" height="48"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              id="linkedin-link"
+              ><img
+                src="img/linkedin-icon.svg"
+                alt="X Icon"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank" id="github-link"
+              ><img
+                src="img/github-icon.svg"
+                alt="X Icon"
+                width="48"
+                height="48"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom-container">
+        <ul class="footer-bottom-list">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2025. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script>
+      const navToggle = document.getElementById("nav-toggle")
+      const navListLink = document.getElementById("nav-list-link")
+
+      navToggle.addEventListener("click", () => {
+        navListLink.classList.toggle("show")
+      })
+    </script>
+  </body>
+</html>
